@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Gutim Template">
+        <meta name="keywords" content="Gutim, unica, creative, html">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>FitnessGig</title>
+    
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap"
+            rel="stylesheet">
+    
+        <!-- Css Styles -->
+        <link rel="stylesheet" href= "{{ url_for('static', filename='css/bootstrap.min.css') }}" type="text/css">
+        <link rel="stylesheet" href= "{{ url_for('static', filename='css/font-awesome.min.css') }}" type="text/css">
+        <link rel="stylesheet" href= "{{ url_for('static', filename='css/owl.carousel.min.css') }}" type="text/css">
+        <link rel="stylesheet" href= "{{ url_for('static', filename='css/magnific-popup.css') }}" type="text/css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/slicknav.min.css') }}" type="text/css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+    </head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header-section">
+        <div class="container">
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="{{ url_for('static', filename='img/logo.png') }}" alt="">
+                </a>
+            </div>
+            <div class="nav-menu">
+                <nav class="mainmenu mobile-menu">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li class="active"></liclass>><a href="./bmi.html">BMI Calculator</a></li>
+                    </ul>
+                </nav>
+                <a href="./logout.html" class="primary-btn signup-btn" method="POST">LOGOUT</a>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Breadcrumb Section Begin -->
+    <section class="breadcrumb-section set-bg" data-setbg="{{ url_for('static', filename='img/breadcrumb/classes-breadcrumb.jpg') }}">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-text">
+                        <h2>BMI Calci</h2>
+                        <div class="breadcrumb-option">
+                            <a href="./index.html"><i class="fa fa-home"></i> Home</a>
+                            <span>BMI Calci</span>
+                            <br>
+                            <font size="3"
+                            color= "#FFFFFF">
+                            An excellent tool to measure a person’s leanness or fatness as per height and weight.
+                          </font>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Section End -->
+
+    <!-- BMI Section Begin -->
+    <section class="contact-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="contact-info">
+                        <h4>What Is Body Mass Index?</h4>
+                        <h5>BMI is Body Mass Index a parameter to assess nutritional status as per height and weight. It is a ratio between weight in kilograms and height in square meters</h5>
+                        <br>
+                        <h4>BMI Charts Adults</h4>
+                        <img src="{{ url_for('static', filename='img/bmi/1.jpeg') }}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="contact-form">
+                        <h4>Calculate your BMI now!</h4>
+                        <form action="/bmi.html" method="POST">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <input type="text" name='height' placeholder="Enter your Height in meters"> 
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="text" name='weight' placeholder="Enter your Weight in Kgs">  
+                                </div>
+                                <button type="submit" value="Calculate">Calculate</button>
+                            </div>
+                        </form>
+                        <img src="C:\Users\harde\Desktop\bmi\bmi\myapp\progresschart.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="contact-option">
+                        <span>Phone</span>
+                        <p>9999999999</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-option">
+                        <span>Address</span>
+                        <p>K.J. Somaiya College Of Engineering</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-option">
+                        <span>Email</span>
+                        <p>fitnessgig@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="subscribe-option set-bg" data-setbg="{{ url_for('static', filename='img/footer-signup.jpg') }}">
+                <div class="so-text">
+                    <h4>Subscribe To Our Mailing List</h4>
+                    <p>Sign up to receive the latest information </p>
+                </div>
+                <!-- <form action="#" class="subscribe-form">
+                    <input type="text" placeholder="Enter Your Mail">
+                    <button type="submit"><i class="fa fa-send"></i></button>
+                </form> -->
+            </div>
+            <div class="copyright-text">
+                <ul>
+                    <li><a href="#">Term&Use</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+                
+                <div class="footer-social">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="{{ url_for('static', filename='js/jquery-3.3.1.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.magnific-popup.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/mixitup.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.slicknav.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+
+</html>

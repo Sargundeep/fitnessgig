@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Login</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='fonts/material-design-iconic-font/css/material-design-iconic-font.min.css') }}">
+		
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/style2.css') }}" type="text/css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+	</head>
+
+	<body>
+
+		<div class="wrapper">
+			<div class="inner">
+				<div class="image-holder">
+					<br>					
+					<img src="{{ url_for('static', filename='img/registration-form-6.jpg') }}" alt="">
+				</div>
+				<form action="/login.html" method="POST">
+				<h3 style="font-family:'Times New Roman', Times, serif;"><b>WELCOME TO FITNESSGIG</b></h3>
+				<br>
+				<h3>Login</h3>
+				<br>
+
+                <div class="form-row">
+                    <input type="text" class="form-control" name="username" placeholder="Username">
+					<input type="password" class="form-control" name="pword" placeholder="Password">
+				</div>
+				<br>
+
+				<div class="form-row">
+                    <input class="buttonn" type="submit" value="Sign Up">
+				</div>
+				<div class="form-row">
+					<a href = "./signup.html" class="buttonn"> New User! Register Here </a>	
+				</div>
+				<div class="form-row">
+					<h2 class="msg">
+						{{ msg }} 
+					</h2>	
+
+				</div>
+                    <!-- <div class="form-row">
+                        <a href="./signup.html" class="primary-btn signup-btn">Signup</a>
+                    </div> -->
+				</form>
+				
+			</div>
+		</div>
+	</body>
+</html>

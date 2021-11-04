@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description">
+    <meta name="keywords">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FitnessGig</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href={*}
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href= "{{ url_for('static', filename='css/bootstrap.min.css') }}" type="text/css">
+    <link rel="stylesheet" href= "{{ url_for('static', filename='css/font-awesome.min.css') }}" type="text/css">
+    <link rel="stylesheet" href= "{{ url_for('static', filename='css/owl.carousel.min.css') }}" type="text/css">
+    <link rel="stylesheet" href= "{{ url_for('static', filename='css/magnific-popup.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/slicknav.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header-section">
+        <div class="container">
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="{{ url_for('static', filename='img/logo.png') }}" alt="">
+                </a>
+            </div>
+            <div class="nav-menu">
+                <nav class="mainmenu mobile-menu">
+                    <ul>
+                        <li class="active"><a href="./index.html">Home</a></li>
+                        <li><a href="./bmi.html">BMI Calculator</a></li>
+                    </ul>
+                </nav>
+                <a href="./logout.html" class="primary-btn signup-btn" method="POST">LOGOUT</a>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Section Begin -->
+    <section class="hero-section set-bg" data-setbg="{{ url_for('static', filename='img/hero-bg.jpg') }}">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="hero-text">
+                        <!-- <span>FITNESS ELEMENTS</span> -->
+                        <h1 style="font-family:'Times New Roman', Times, serif;color: #FF7222;"><b>FITNESSGIG</b></h3>
+                        <p>A one stop fitness webapp with major focus on your BMI</p>
+                        <!-- <a href="#" class="primary-btn">Read More</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- About Section Begin -->
+    <section class="about-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about-pic">
+                        <img src="{{ url_for('static', filename='img/about-pic.jpg') }}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-text">
+                        <h2>Story About Us</h2>
+                        <p class="first-para">Lorem ipsum proin gravida nibh vel velit auctor aliquet. Aenean pretium
+                            sollicitudin, nascetur auci elit consequat ipsutissem niuis sed odio sit amet nibh vulputate
+                            cursus a amet.</p>
+                        <p class="second-para">Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, gravida
+                            quam semper libero sit amet. Etiam rhoncus. Maecenas tempus, tellus eget condimentum
+                            rhoncus, gravida quam semper libero sit amet.</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Services Section Begin -->
+    <section class="services-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="services-pic">
+                        <img src="{{ url_for('static', filename='img/services/service-pic.jpg') }}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="service-items">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="services-item bg-gray">
+                                    <img src="{{ url_for('static', filename='img/services/service-icon-1.png') }}" alt="">
+                                    <h4>Strategies</h4>
+                                    <p>Aenean massa. Cum sociis Theme et natoque penatibus et magnis dis part urient
+                                        montes.</p>
+                                </div>
+                                <div class="services-item bg-gray pd-b">
+                                    <img src="{{ url_for('static', filename='img/services/service-icon-3.png') }}" alt="">
+                                    <h4>Diet</h4>
+                                    <p>Aenean massa. Cum sociis Theme et natoque penatibus et magnis dis part urient
+                                        montes.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="services-item">
+                                    <img src="{{ url_for('static', filename='img/services/service-icon-2.png') }}" alt="">
+                                    <h4>Workout</h4>
+                                    <p>Aenean massa. Cum sociis Theme et natoque penatibus et magnis dis part urient
+                                        montes.</p>
+                                </div>
+                                <div class="services-item pd-b">
+                                    <img src="{{ url_for('static', filename='img/services/service-icon-4.png') }}" alt="">
+                                    <h4>BMI</h4>
+                                    <p>Aenean massa. Cum sociis Theme et natoque penatibus et magnis dis part urient
+                                        montes.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section End -->
+
+    <!-- Testimonial Section Begin -->
+    <section class="testimonial-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>success stories</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="testimonial-slider owl-carousel">
+                        <div class="testimonial-item">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                            <div class="ti-pic">
+                                <img src="{{ url_for('static', filename='img/testimonial/testimonial-1.jpg') }}" alt="">
+                                <div class="quote">
+                                    <img src="{{ url_for('static', filename='img/testimonial/quote-left.png') }}" alt="">
+                                </div>
+                            </div>
+                            <div class="ti-author">
+                                <h4>Jane Doe</h4>
+                            </div>
+                        </div>
+                        <div class="testimonial-item">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                            <div class="ti-pic">
+                                <img src="{{ url_for('static', filename='img/testimonial/testimonial-1.jpg') }}" alt="">
+                                <div class="quote">
+                                    <img src="{{ url_for('static', filename='img/testimonial/quote-left.png') }}" alt="">
+                                </div>
+                            </div>
+                            <div class="ti-author">
+                                <h4>Jane Doe</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonial Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="contact-option">
+                        <span>Phone</span>
+                        <p>9999999999</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-option">
+                        <span>Address</span>
+                        <p>K.J. Somaiya College Of Engineering</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-option">
+                        <span>Email</span>
+                        <p>fitnessgig@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="subscribe-option set-bg" data-setbg="{{ url_for('static', filename='img/footer-signup.jpg') }}">
+                <div class="so-text">
+                    <h4>Subscribe To Our Mailing List</h4>
+                    <p>Sign up to receive the latest information </p>
+                </div>
+                <!-- <form action="#" class="subscribe-form">
+                    <input type="text" placeholder="Enter Your Mail">
+                    <button type="submit"><i class="fa fa-send"></i></button>
+                </form> -->
+            </div>
+            <div class="copyright-text">
+                <ul>
+                    <li><a href="#">Term&Use</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+                
+                <div class="footer-social">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="{{ url_for('static', filename='js/jquery-3.3.1.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.magnific-popup.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/mixitup.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.slicknav.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+
+</html>
