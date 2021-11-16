@@ -1,6 +1,6 @@
 # FitnessGig
 
-[![](https://img.shields.io/badge/Made_with-Python-res?style=for-the-badge&logo=pytorch)](https://docs.python.org/3/)(https://flask.palletsprojects.com/en/2.0.x/)
+[![](https://img.shields.io/badge/Made_with-Python-res?style=for-the-badge&logo=pytorch)](https://docs.python.org/3/)
 <!-- [![PWC](https://img.shields.io/endpoint.svg?url=https://fastapi.tiangolo.com/)](https://fastapi.tiangolo.com/)
 [![PWC](https://docs.streamlit.io/)](https://docs.streamlit.io/)
 
