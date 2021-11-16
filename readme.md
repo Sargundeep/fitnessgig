@@ -1,4 +1,4 @@
-# Medico
+# FitnessGig
 
 [![](https://img.shields.io/badge/Made_with-Python-res?style=for-the-badge&logo=pytorch)](https://docs.python.org/3/)
 <!-- [![PWC](https://img.shields.io/endpoint.svg?url=https://fastapi.tiangolo.com/)](https://fastapi.tiangolo.com/)
